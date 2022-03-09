@@ -1,4 +1,6 @@
 import { connect, connection, disconnect } from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const MONGO_URL = process.env.MONGO_URL as string
 
