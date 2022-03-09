@@ -1,6 +1,6 @@
 import request from 'supertest'
-import app from '../../app'
 import planetsModel from '../../models/planets.model'
+import app from '../../app'
 import { connectDatabase, disconnectDatabase } from '../../services/mongo'
 
 const prefix = '/api/v1'
