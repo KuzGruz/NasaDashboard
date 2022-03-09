@@ -2,7 +2,6 @@
 
 #folders
 server/public
-server/data
 
 # dependencies
 node_modules
