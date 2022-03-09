@@ -1,5 +1,6 @@
 import request from 'supertest'
 import app from '../../app'
+import planetsModel from '../../models/planets.model'
 import { connectDatabase, disconnectDatabase } from '../../services/mongo'
 
 const prefix = '/api/v1'
@@ -7,6 +8,7 @@ const prefix = '/api/v1'
 describe('Launches API', () => {
     beforeAll(async() => {
         await connectDatabase()
+        await planetsModel.preloadModel()
     })
 
     afterAll(async() => {
